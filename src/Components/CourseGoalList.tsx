@@ -10,7 +10,7 @@ type CourseGoalListProps = {
 const CourseGoalList = ({ goals, onDeleteGoal }: CourseGoalListProps) => {
   if (goals.length === 0) {
     return (
-      <InfoBox mode="hint" >
+      <InfoBox mode="hint">
         You have no Course Goals yet,start adding some!
       </InfoBox>
     );
@@ -25,7 +25,7 @@ const CourseGoalList = ({ goals, onDeleteGoal }: CourseGoalListProps) => {
   }
   return (
     <div>
-        {warningBox}
+      {warningBox}
       <ul>
         {goals.map((goal) => (
           <li key={goal.id}>
